@@ -18,7 +18,7 @@ public class ConsumingRestApplication {
 
     // Inject the base URL from application properties or environment variables
     
-	@Value("${quoters_base_url}")
+	@Value("${quoters_base_url:http://localhost:8080}")
     private String quotersBaseUrl;
     
 

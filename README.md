@@ -17,8 +17,8 @@ Before running this application, you will need:
 ### Step 1: Clone the Repository
 Clone this repository to your local machine:
 ```bash
-git clone https://github.com/yourusername/ConsumingRest.git
-cd ConsumingRest
+git clone https://github.com/HamimMahdie/consuming-RESTful.git
+cd consuming-RESTful
 ```
 
 ### Step 2: Start Quoters Service
@@ -37,10 +37,17 @@ Leave this command running as long as you are using the service.
 
 ### Step 4: Build and Run the Client Application
 
+#### Maven Build
+Ensure Maven builds successfully.
+```bash
+mvn clean package
+
+```
+
 #### Build the Docker Image
 Ensure Docker is running on your machine. Build the Docker image using:
 ```bash
-docker image build -t yourusername/consumingrest:latest .
+docker image build -t HamimMahdie/consumingrest:latest .
 ```
 
 #### Push the Image to Docker Hub
