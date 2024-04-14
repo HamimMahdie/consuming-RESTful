@@ -17,7 +17,7 @@ Before running this application, you will need:
 ### Step 1: Clone the Repository
 Clone this repository to your local machine:
 ```bash
-git clone https://github.com/yourusername/ConsumingRest.git
+git clone [https://github.com/yourusername/ConsumingRest.git](https://github.com/HamimMahdie/consuming-RESTful.git)
 cd ConsumingRest
 ```
 
