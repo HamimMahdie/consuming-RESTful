@@ -47,7 +47,7 @@ mvn clean package
 #### Build the Docker Image
 Ensure Docker is running on your machine. Build the Docker image using:
 ```bash
-docker image build -t HamimMahdie/consumingrest:latest .
+docker image build -t yourusername/consumingrest:latest .
 ```
 
 #### Push the Image to Docker Hub
@@ -74,7 +74,7 @@ Look for logs that show the output of the four RESTful calls, confirming that th
 - `src/main/java/ConsumingRestApplication.java`: Source code for the Spring Boot application.
 
 ## Tips and Techniques
-Ensure the `quoters_base_url` is correctly configured in your application's properties. This URL is critical for the application to correctly connect to the Quoters service.
+The `quoters_base_url` can be configured in application's properties as well. However, in my app, I configured it directly into ConsumingRestApplication.java to fix some unexpected errors. In every case, this URL is critical for the application to correctly connect to the Quoters service.
 
 ---
 
@@ -83,4 +83,4 @@ Ensure the `quoters_base_url` is correctly configured in your application's prop
 - Ensure that any URL or credentials specific to your environment are correctly set up.
 - Modify the application properties and Kubernetes configurations as needed to suit your deployment environment.
 
-This README is designed to guide users through setting up and verifying the application in a typical Kubernetes and Docker environment, providing a seamless workflow from initial clone to verification.
+
